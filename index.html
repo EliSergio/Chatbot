@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chatbot</title>
+
+	<style>
+		body{
+			font-family: "Century Gothic" , Calibri , serif;
+			font-size: 23px;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.main{
+			margin: 0px 10%;
+		}
+
+		.leftexp{
+			width: 45%;
+			float: left;
+		}
+
+		.rightexp{
+			width: 45%;
+			float: left;
+			margin-left: 5%;
+		}
+
+		.main::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		section{
+			width: 100%;
+			min-height: 300px;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+		}
+
+		.bleu{
+			border-top: 5px solid #29c;
+			background-color: rgba(30,152,212,0.15);
+		}
+
+		.leftexp img{
+			width: 100%;
+			max-width: 400px;
+		}
+
+	</style>
+</head>
+<body>
+	<section class = "bleu">
+		<div class = "main">
+			<div class = "leftexp">
+				<img src = "girl.png" alt = "fille">"
+			</div>
+			<div class = "rightexp">
+				<div>user : <span id = "user"></span></div>
+				<div>tricia : <span id = "chatbot"></span></div>
+				<div><input id = "input" type = "text" placeholder = "say anything..." autocomplete = "off"></div>	
+			</div>
+		
+		</div>
+	</section>
+
+	<script src = "script.js"></script>
+</body>
+</html>
